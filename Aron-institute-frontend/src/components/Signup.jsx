@@ -1,6 +1,6 @@
 //this is first/
 import { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link} from "react-router-dom";
 import alertContext from "../context/alert/alertContext";
 import loadingContext from "../context/loading/loadingContext";
 
@@ -20,7 +20,7 @@ export default function Signup() {
 
   const [otp, setOtp] = useState("");
   const [showOtpModal, setShowOtpModal] = useState(false);
-  const [isOtpVerified, setIsOtpVerified] = useState(false);
+  const [isOtpVerified, setIsOtpVerified] = useState(true);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -244,6 +244,17 @@ export default function Signup() {
             >
               Set Password
             </button>
+            <div className="text-center mt-0">
+              <p className="text-white">
+                Already have an account?{" "}
+                <Link
+                  to="/login"
+                  className="text-blue-600 hover:text-blue-600 underline transition"
+                >
+                  Login
+                </Link>
+              </p>
+            </div>
           </>
         )}
       </div>

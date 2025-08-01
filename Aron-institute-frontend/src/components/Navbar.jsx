@@ -104,16 +104,16 @@ export default function Navbar() {
             {/* Login/Signup */}
             <button
               onClick={() => navigate("/login")}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1.5 rounded text-sm"
+              className="bg-gradient-to-bl from-[rgb(38,114,48)] via-[#16a34a] to-[#0f766e] text-white px-4 py-1.5 rounded text-sm"
             >
               Login
             </button>
-            <button
+            {/* <button
               onClick={() => navigate("/signup")}
               className="bg-green-600 hover:bg-green-700 text-white px-4 py-1.5 rounded text-sm"
             >
               Signup
-            </button>
+            </button> */}
 
             {/* Inbox always visible */}
             {/* <Inbox notifications={notifications} setNotifications={setNotifications} /> */}
@@ -158,7 +158,7 @@ export default function Navbar() {
           >
             Login
           </button>
-          <button
+          {/* <button
             className="mt-2 w-full bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded text-sm"
             onClick={() => {
               navigate("/signup");
@@ -166,7 +166,7 @@ export default function Navbar() {
             }}
           >
             Signup
-          </button>
+          </button> */}
         </div>
       )}
     </header>
