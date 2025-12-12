@@ -1,0 +1,34 @@
+services:
+  backend:
+    image: shivamdevthakur/institute-backend:latest
+    build:
+      context: ./Aron-institute-backend
+      dockerfile: Dockerfile
+    container_name: institute-backend
+    ports:
+      - "4000:4000"
+    env_file:
+      - ./Aron-institute-backend/.env
+    environment:
+      - NODE_ENV=production
+    networks:
+      - Institute
+
+  frontend:
+    image: shivamdevthakur/institute-frontend:latest
+    build:
+      context: ./Aron-institute-frontend
+      dockerfile: Dockerfile
+    container_name: institute-frontend
+    ports:
+      - "3000:4173"
+    env_file:
+      - ./Aron-institute-frontend/.env
+    environment:
+      - NODE_ENV=production
+    networks:
+      - Institute
+
+networks:
+  Institute:
+    driver: bridge

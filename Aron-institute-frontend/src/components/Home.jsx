@@ -3,11 +3,12 @@ import Footer from "./Footer";
 import Courses from "./Courses";
 import EnrollNow from "./EnrollNow";
 
-import student1 from "../assets/photo1.jpg";
-import student2 from "../assets/photo2.jpg";
-import student3 from "../assets/photo3.jpg";
-import student4 from "../assets/photo4.jpg";
-import student5 from "../assets/photo5.jpg";
+// import student1 from "../assets/photo1.jpg";
+// import student2 from "../assets/photo2.jpg";
+// import student3 from "../assets/photo3.jpg";
+// import student4 from "../assets/photo4.jpg";
+// import student5 from "../assets/photo5.jpg";
+
 
 const images = [student1, student2, student3, student4, student5];
 
