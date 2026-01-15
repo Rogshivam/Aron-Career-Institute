@@ -8,9 +8,14 @@ import EnrollNow from "./EnrollNow";
 // import student3 from "../assets/photo3.jpg";
 // import student4 from "../assets/photo4.jpg";
 // import student5 from "../assets/photo5.jpg";
-
-
-const images = [student1, student2, student3, student4, student5];
+// const images = [student1, student2, student3, student4, student5];
+const images = [
+  "https://res.cloudinary.com/dn0bmsj49/image/upload/v1758431512/artist-bazaar/brnrft8swywijveqnitz.jpg",
+  "https://res.cloudinary.com/dn0bmsj49/image/upload/v1758431476/artist-bazaar/sgjjf4tvfcscd8ifyvde.jpg",
+  "https://res.cloudinary.com/dn0bmsj49/image/upload/v1757699323/photo2_j8g5zv.jpg",
+  "https://res.cloudinary.com/dn0bmsj49/image/upload/v1757699322/photo4_kpxe2z.jpg",
+  "https://res.cloudinary.com/dn0bmsj49/image/upload/v1758431559/artist-bazaar/sol5w8iokvrox4giyhqg.jpg"
+];
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
